@@ -1,0 +1,17 @@
+/* Text utility */
+.text-sm {
+  font-size: 10px;
+}
+
+/* Spacing */
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}

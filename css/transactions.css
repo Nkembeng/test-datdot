@@ -1,0 +1,39 @@
+.transactions-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.transactions-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.transaction {
+  display: flex;
+}
+
+.transaction-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.transaction-action {
+  color: #4b4b4b;
+}
+
+.transaction-balance {
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+
+.transaction-date {
+  color: #4b4b4b;
+}
+
+.transaction-from {
+  color: #545454;
+}

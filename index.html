@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test DatDot</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/card.css" />
+    <link rel="stylesheet" href="css/assets.css" />
+    <link rel="stylesheet" href="css/transactions.css" />
+    <link rel="stylesheet" href="css/main-content.css" />
+    <link rel="stylesheet" href="css/utility.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container header-container">
+        <span class="brand-name">DatDot</span>
+        <img
+          class="profile-image"
+          src="assets/images/profile.png"
+          alt="Profile Image"
+          height="40"
+          width="40"
+        />
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="main-content">
+          <section class="card-section">
+            <div class="card">
+              <h4 class="card-title">Asset 1</h4>
+              <img
+                src="assets/icons/cryptocurrency_eth.svg"
+                alt="Cryptocurrency icon"
+                height="32"
+                width="32"
+                class="crypto-icon"
+              />
+              <span class="crypto-balance">23 ETH</span>
+              <span class="usd-balance"> $0.00 USD </span>
+              <div class="card-actions">
+                <div class="card-action">
+                  <button class="button-icon mb-10">
+                    <img src="assets/icons/download.svg" alt="Download icon" />
+                  </button>
+                  Buy
+                </div>
+                <div class="card-action">
+                  <button class="button-icon mb-10">
+                    <img
+                      src="assets/icons/arrow-up-right.svg"
+                      alt="Array up-right icon"
+                    />
+                  </button>
+                  Send
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="assets">
+            <h3 class="assets-title">Assets</h3>
+            <nav class="assets-list">
+              <div class="asset active">
+                <div class="icon-wrapper">
+                  <img
+                    src="assets/icons//cryptocurrency_eth.svg"
+                    alt="Asset 1"
+                    class="asset-icon"
+                    height="32"
+                    width="32"
+                  />
+                </div>
+                <span class="asset-title"> Asset 1 </span>
+              </div>
+              <div class="asset">
+                <div class="icon-wrapper">
+                  <img
+                    src="assets/icons//cryptocurrency_eth.svg"
+                    alt="Asset 2"
+                    class="asset-icon"
+                    height="32"
+                    width="32"
+                  />
+                </div>
+                <span class="asset-title"> Asset 2 </span>
+              </div>
+            </nav>
+          </section>
+          <section class="transactions">
+            <h3 class="transactions-title">Transactions</h3>
+            <ul class="transactions-list">
+              <li class="mb-20">
+                <div class="transaction">
+                  <div class="mr-10">
+                    <button class="button-icon">
+                      <img
+                        src="assets/icons/download.svg"
+                        alt="Download icon"
+                      />
+                    </button>
+                  </div>
+                  <div class="transaction-details">
+                    <div>
+                      <span class="transaction-action">Buy</span>
+                      <span class="transaction-balance">23 ETH</span>
+                      <span class="transaction-date text-sm">23 hours ago</span>
+                    </div>
+                    <div>
+                      <span class="transaction-from text-sm">from</span>
+                      <span class="transaction-id text-sm">
+                        0xDd814F5C662d07a5212e9c54db0cCED91d720f82
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="transaction">
+                  <div class="mr-10">
+                    <button class="button-icon">
+                      <img
+                        src="assets/icons/download.svg"
+                        alt="Download icon"
+                      />
+                    </button>
+                  </div>
+                  <div class="transaction-details">
+                    <div>
+                      <span class="transaction-action">Buy</span>
+                      <span class="transaction-balance">23 ETH</span>
+                      <span class="transaction-date text-sm">23 hours ago</span>
+                    </div>
+                    <div>
+                      <span class="transaction-from text-sm">from</span>
+                      <span class="transaction-id text-sm">
+                        0xDd814F5C662d07a5212e9c54db0cCED91d720f82
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

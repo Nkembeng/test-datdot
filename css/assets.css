@@ -1,0 +1,41 @@
+.assets-title {
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.assets-list {
+  margin: -10px -15px;
+  display: flex;
+  flex-direction: row;
+}
+
+.asset {
+  padding: 10px 15px;
+  text-align: center;
+}
+
+.icon-wrapper {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
+  margin: 0 auto 10px;
+  padding: 13px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.asset-title {
+  font-weight: 600;
+}
+
+.asset.active .icon-wrapper {
+  border: 1px solid #000;
+}
+
+@media screen and (min-width: 768px) {
+  .assets-list {
+    flex-direction: column;
+  }
+}
+

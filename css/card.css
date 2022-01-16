@@ -1,0 +1,75 @@
+.card {
+  border: 1px solid #000;
+  border-radius: 10px;
+  background-color: #e9e9e9;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-title {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.crypto-icon {
+  height: 32px;
+  width: 32px;
+  margin-bottom: 10px;
+}
+
+.crypto-balance {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.usd-balance {
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.card-actions {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-action {
+  padding: 0 24px;
+}
+
+.button-icon {
+  display: block;
+  background-color: #C4C4C4;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    padding: 20px;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+
+  .crypto-icon {
+    height: 40px;
+    width: 40px;
+    margin-bottom: 15px;
+  }
+
+  .usd-balance {
+    margin-bottom: 20px;
+  }
+
+  .card-action {
+    padding: 0 35px;
+  }
+}
