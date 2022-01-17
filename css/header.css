@@ -1,6 +1,6 @@
 .main-header {
-  background-color: #000;
-  color: #fff;
+  background-color: var(--body-color);
+  color: var(--body-bg);
   padding: 15px 0;
 }
 
@@ -20,6 +20,30 @@
 .brand-name {
   font-size: 20px;
   font-weight: 600;
+}
+
+.header-right-items {
+  display: flex;
+  align-items: center;
+}
+
+#switchThemeButton {
+  background-color: transparent;
+  border: none;
+  padding: 3px;
+  margin-right: 50px;
+}
+
+#switchThemeButton .icon {
+  display: none;
+}
+
+html.light-theme #switchThemeButton .icon.light {
+  display: initial;
+}
+
+html.dark-theme #switchThemeButton .icon.dark {
+  display: initial;
 }
 
 @media screen and (min-width: 768px) {

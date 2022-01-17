@@ -1,3 +1,18 @@
+html.light-theme .asset {
+  --asset-icon-wrapper-bg-color: rgba(0, 0, 0, 0.2);
+  --asset-icon-wrapper-active-border-color: var(--body-color, #000);
+}
+
+html.dark-theme .asset {
+  --asset-icon-wrapper-bg-color: rgba(255, 255, 255, 0.2);
+  --asset-icon-wrapper-active-border-color: var(--body-color, #fff);
+}
+
+.asset {
+  padding: 10px 15px;
+  text-align: center;
+}
+
 .assets-title {
   font-weight: 600;
   margin-bottom: 20px;
@@ -10,27 +25,26 @@
   flex-direction: row;
 }
 
-.asset {
-  padding: 10px 15px;
-  text-align: center;
-}
-
 .icon-wrapper {
   width: 60px;
   height: 60px;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: var(--asset-icon-wrapper-bg-color);
   border-radius: 50px;
   margin: 0 auto 10px;
   padding: 13px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--asset-icon-wrapper-bg-color);
+}
+
+.asset-icon {
+  font-size: 32px;
 }
 
 .asset-title {
   font-weight: 600;
 }
 
-.asset.active .icon-wrapper {
-  border: 1px solid #000;
+.asset:target .icon-wrapper {
+  border: 1px solid var(--asset-icon-wrapper-active-border-color);
 }
 
 @media screen and (min-width: 768px) {

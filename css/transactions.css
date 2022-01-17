@@ -1,3 +1,20 @@
+/* Theming variables */
+html.light-theme .transaction {
+  --transaction-action-color: #4b4b4b;
+  --transaction-date-color: #4b4b4b;
+  --transaction-from-color: #545454;
+}
+
+html.dark-theme .transaction {
+  --transaction-action-color: #4b4b4b;
+  --transaction-date-color: #4b4b4b;
+  --transaction-from-color: #545454;
+}
+
+.transaction {
+  display: flex;
+}
+
 .transactions-title {
   font-size: 20px;
   font-weight: 600;
@@ -10,10 +27,6 @@
   margin: 0;
 }
 
-.transaction {
-  display: flex;
-}
-
 .transaction-details {
   display: flex;
   flex-direction: column;
@@ -21,7 +34,7 @@
 }
 
 .transaction-action {
-  color: #4b4b4b;
+  color: var(--transaction-action-color);
 }
 
 .transaction-balance {
@@ -31,9 +44,14 @@
 }
 
 .transaction-date {
-  color: #4b4b4b;
+  color: var(--transaction-date-color);
 }
 
 .transaction-from {
-  color: #545454;
+  color: var(--transaction-from-color);
+}
+
+.transaction-button-icon {
+  font-size: 20px;
+  padding: 9px;
 }

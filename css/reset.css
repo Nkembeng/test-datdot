@@ -21,4 +21,5 @@ button {
   cursor: pointer;
   vertical-align: middle;
   text-align: center;
+  color: inherit;
 }
