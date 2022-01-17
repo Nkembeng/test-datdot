@@ -11,6 +11,7 @@ html.dark-theme .asset {
 .asset {
   padding: 10px 15px;
   text-align: center;
+  cursor: pointer;
 }
 
 .assets-title {
@@ -43,8 +44,43 @@ html.dark-theme .asset {
   font-weight: 600;
 }
 
-.asset:target .icon-wrapper {
+.asset.active .icon-wrapper {
   border: 1px solid var(--asset-icon-wrapper-active-border-color);
+}
+
+@keyframes asset-content-in {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.asset-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  transform: translateX(0%);
+  background-color: var(--body-bg);
+  will-change: transform;
+}
+
+.asset-container.inactive {
+  position: absolute;
+  transform: translateX(0%);
+  z-index: 1;
+}
+
+.asset-container.active {
+  position: relative;
+  transform: translateX(0);
+  z-index: 2;
+  animation: asset-content-in 0.75s linear;
 }
 
 @media screen and (min-width: 768px) {

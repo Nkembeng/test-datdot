@@ -2,6 +2,7 @@
   background-color: var(--body-color);
   color: var(--body-bg);
   padding: 15px 0;
+  transition: all 0.5s ease-in-out;
 }
 
 .header-container {
